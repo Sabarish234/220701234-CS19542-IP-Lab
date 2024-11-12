@@ -106,3 +106,22 @@ button{
     margin-top: 3%;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .main {
+        height: auto; /* Allow height to adjust based on content */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .mainchild {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .left,
+    .right {
+        width: 80%;
+        margin: 10px auto;
+        height: auto;
+    }
+}

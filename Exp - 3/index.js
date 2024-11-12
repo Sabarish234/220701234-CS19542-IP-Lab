@@ -15,15 +15,16 @@ function validate(){
 
     //Checking all the fields in Contact Information are filled.
     var form2 = document.getElementById("contactform");
-    var noofelements2 = form.elements.length;
-    var inputs2 = form.elements;
+    var noofelements2 = form2.elements.length;
+    var inputs2 = form2.elements;
+    noofelements2--; //To remove the button from form element
     for(var i=0; i<noofelements2; i++){
         if(inputs2[i].value == "")
             flag=1;
     }
 
     //If any field is empty , alert message is displayed.
-    flag==0 ? null : alert("Kindly fill all the fields.");
+    flag==0 ? null : alert("Kindly fill all the fields." + noofelements2);
 
 
     //To check pincode is exactly 6 digits.

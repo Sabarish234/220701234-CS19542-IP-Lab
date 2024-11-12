@@ -32,9 +32,7 @@ body {
     align-items: center;
 }
 
-.address>center , .header>center{
-    padding: 10px;
-}
+
 
 .main-content {
     display: flex;
